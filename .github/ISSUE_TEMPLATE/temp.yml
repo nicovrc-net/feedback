@@ -29,6 +29,21 @@ body:
       default: 0
     validations:
       required: true
+        - type: dropdown
+    id: vrc_version
+    attributes:
+      label: VRChatのバージョン
+      description: ご利用のバージョンを教えてください。
+      options:
+        - Live (デフォルト)
+        - OpenBeta
+        - Android
+        - Meta
+        - Vive
+        - iOS
+      default: 0
+    validations:
+      required: true
   - type: dropdown
     id: browsers
     attributes:
