@@ -1,0 +1,52 @@
+name: 機能追加リクエスト
+description: 機能追加に関するリクエストをお寄せください。
+title: "[機能追加リクエスト]: "
+labels: ["機能追加", "提案"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        新しい機能についてのリクエストをありがとうございます！  
+        以下の情報を入力してください。
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: どのような機能を追加したいですか？
+      description: 追加したい機能の詳細を教えてください。
+      placeholder: どのような機能が必要ですか？
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: 使用例
+      description: 提案する機能がどのように使用されるか具体的に教えてください。
+      placeholder: 機能の使用例や目的について説明してください。
+    validations:
+      required: true
+  - type: checkboxes
+    id: benefits
+    attributes:
+      label: 期待される利点
+      description: この機能がプロジェクトにどのように貢献するかを選択してください。
+      options:
+        - label: ユーザー体験の向上
+        - label: パフォーマンスの向上
+        - label: 新たなユースケースへの対応
+        - label: その他（詳細を記入してください）
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: 追加情報
+      description: その他に伝えたいことや関連情報があれば教えてください。
+      placeholder: 追加のコメントやリンクなど。
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 行動規範
+      description: このリクエストを提出することで、[行動規範](https://nicovrc.net/privacy)に従うことに同意します。
+      options:
+        - label: このプロジェクトの行動規範に従うことに同意します
+          required: true
