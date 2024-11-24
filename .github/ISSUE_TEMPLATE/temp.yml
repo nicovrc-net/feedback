@@ -9,6 +9,20 @@ body:
     attributes:
       value: |
         バグ報告にご協力いただきありがとうございます！
+  - type: dropdown
+    id: tools_version
+    attributes:
+      label: ツール
+      description: ご利用の茅野ななみのVRChat向け支援ツールのツールを教えてください。
+      options:
+        - VRChat向けニコニコ動画再生支援ツール (デフォルト)
+        - VRChat向け動画プレイヤー画像表示支援ツール
+        - KuronekoServer VRChat Video System
+        - YTQ System
+        - 陣内システム(β)（非推奨）
+      default: 0
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
