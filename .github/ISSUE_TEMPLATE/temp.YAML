@@ -1,0 +1,55 @@
+name: バグ報告
+description: バグを報告してください。
+title: "[バグ]: "
+labels: ["バグ", "トリアージ"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグ報告にご協力いただきありがとうございます！
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 何が起きましたか？
+      description: また、期待していた動作についても教えてください。
+      placeholder: 起きた現象を教えてください！
+      value: "バグが発生しました！"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: バージョン
+      description: ご利用のソフトウェアのバージョンを教えてください。
+      options:
+        - 2.6 (デフォルト)
+        - 3.0 (beta)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: どのブラウザで問題が発生していますか？
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: 関連するログ出力
+      description: 関連するログ出力をコピーして貼り付けてください。自動的にコード形式でフォーマットされるため、バックティックは不要です。
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 行動規範
+      description: この問題を提出することで、[行動規範](https://nicovrc.net/privacy)に従うことに同意します。
+      options:
+        - label: このプロジェクトの行動規範に従うことに同意します
+          required: true
