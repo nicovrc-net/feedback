@@ -29,7 +29,7 @@ body:
       default: 0
     validations:
       required: true
-        - type: dropdown
+  - type: dropdown
     id: vrc_version
     attributes:
       label: VRChatのバージョン
