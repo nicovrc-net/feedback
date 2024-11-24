@@ -22,10 +22,12 @@ body:
     id: version
     attributes:
       label: バージョン
-      description: ご利用のソフトウェアのバージョンを教えてください。
+      description: ご利用の茅野ななみのVRChat向け支援ツールのバージョンを教えてください。
       options:
-        - 2.6 (デフォルト)
+        - 2.6 on nicovrc.net (デフォルト)
+        - 2.6 on nicovideo.life (デフォルト)
         - 3.0 (beta)
+        - 1.0 on nicocas.net (beta)
       default: 0
     validations:
       required: true
