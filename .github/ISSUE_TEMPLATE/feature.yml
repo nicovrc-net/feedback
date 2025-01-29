@@ -46,7 +46,7 @@ body:
     id: terms
     attributes:
       label: 行動規範
-      description: このリクエストを提出することで、[行動規範](https://nicovrc.net/privacy)に従うことに同意します。
+      description: このリクエストを提出することで、[行動規範](https://support.nicovideo.life/mt_feedback)に従うことに同意します。
       options:
         - label: このプロジェクトの行動規範に従うことに同意します
           required: true
